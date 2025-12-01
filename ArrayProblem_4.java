@@ -5,29 +5,17 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ArrayProblem_4
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class ArrayProblem_4
-     */
-    public ArrayProblem_4()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public class ArrayProblem_4{
+    public static void main(String[] args){
+        int[] arr2 = {4,8,1,9,2};
+        int smallest = arr2[0];
+        int largest = arr2[0];
+        
+        for (int x : arr2){
+            if (x< smallest) smallest = x;
+            if (x< largest) largest = x;
+        }
+        System.out.println("Smallest: " + smallest);
+        System.out.println("largest:"  + largest);
+    }        
 }
